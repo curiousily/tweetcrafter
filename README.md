@@ -2,6 +2,10 @@
 
 Write tweets with AI Agents (CrewAI)
 
+<a href="https://www.mlexpert.io/bootcamp" target="_blank">
+  <img src="https://raw.githubusercontent.com/curiousily/tweetcrafter/master/.github/tweetcrafter.png">
+</a>
+
 ## Installation
 
 Clone the repo
