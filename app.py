@@ -18,7 +18,7 @@ from tweetcrafter.tasks import (
 
 load_dotenv()
 
-llm = create_model(Config.Model)
+llm = create_model(Config.MODEL)
 
 
 Config.Path.AGENT_LOGS_DIR.mkdir(exist_ok=True, parents=True)

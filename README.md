@@ -43,3 +43,7 @@ Run the app:
 ```sh
 poetry run python app.py
 ```
+
+## Observability
+
+_TweetCrafter_ stores logs of prompts and individual agent logs in the `logs` directory.
