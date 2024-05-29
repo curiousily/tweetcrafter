@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tweetcrafter"
+version = "0.1.0"
+description = ""
+authors = ["Venelin Valkov <venelin@curiousily.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<=3.13"
+crewai = {extras = ["tools"], version = "^0.30.11"}
+langchain-groq = "^0.1.4"
+duckduckgo-search = "^6.1.1"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
