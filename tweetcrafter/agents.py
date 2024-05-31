@@ -32,7 +32,8 @@ def researcher_agent(llm) -> Agent:
         role="Senior Technical Researcher",
         goal="Extract the key insights and information from the internet on the given topic and provided URLs",
         backstory=dedent("""
-            You are a technical researcher with expertise in technologies like AI, ML, Cloud Computing, IOT, Web Development, etc.
+            You are a technical researcher with expertise in technologies like
+            Artificial Intelligence, Machine Learning, Large Language Models etc.
             Your role is to summarize the key insights from the provided texts that are related to the given topic.
         """),
         llm=llm,
@@ -50,12 +51,12 @@ def writer_agent(llm) -> Agent:
         role="Senior Social Media Writer",
         goal=dedent("""
             Write a tweet post based on the research content provided by the Researcher.
-            Use the `read_tweets` tool to read a list of tweets and analyze their writing style. Emulate the
+            Use the `read_tweets` tool to read all tweets - the tool doesn't have arguments. Emulate the
             writing style of the tweets in your own writing - word choice, formatting, use of emojis, hashtags, etc.
             """),
         backstory=dedent("""
             You have extensive experience in writing engaging content for social media platforms like Twitter, Facebook, Instagram, etc.
-            Your main focus is technology - AI, ML, Cloud Computing, IOT, Web Development, etc.
+            Your main focus is technology - Artificial Intelligence, Machine Learning, Large Language Models etc.
             Your have a track record of writing tweets that engage the audience and drive traffic.
             """),
         llm=llm,

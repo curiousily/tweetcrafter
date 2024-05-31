@@ -42,10 +42,52 @@ inputs = {
 }
 ```
 
+Add tweets to analyze their writing style in `data/tweets.md`:
+
+```md
+# Tweet
+
+Ever wondered how to reproduce GPT-2 (124M) efficiently?
+@karpathy with llm.c has the answer!
+
+- 90 mins, $20 on 8X A100 80GB SXM
+- FineWeb dataset: 10B tokens
+- MFU: 49-60%, 178K tokens/sec
+
+https://github.com/karpathy/llm.c/discussions/481
+```
+
 Run the app:
 
 ```sh
 poetry run python app.py
+```
+
+```py
+{
+  'total_tokens': 14322,
+  'prompt_tokens': 11767,
+  'completion_tokens': 2555,
+  'successful_requests': 10
+}
+```
+
+## Result
+
+The tweets I got from the crew (saved to `output/tweet.md`):
+
+```md
+Original Tweet:
+"Meet Phi-3, the cutting-edge language model! 🤖💻 With its conversational format, Phi-3 enables human-like text generation, summarization, and more. Scalable, open-source, and responsible AI-driven. 🚀💡 #Phi3 #LanguageModel #AI #NLP"
+
+Version 1:
+"Unlock the power of Phi-3! 🚀💻 This cutting-edge language model enables human-like text generation, summarization, and more. Learn how to integrate it into your applications today! 💡 #Phi3 #LanguageModel #AI #NLP"
+
+Version 2:
+"Take your applications to the next level with Phi-3! 🚀💻 This scalable, open-source language model enables conversational AI, text generation, and more. Get started with our sample inference code! 💡 #Phi3 #LanguageModel #AI #NLP"
+
+Version 3:
+"Discover the possibilities of Phi-3! 🤖💻 This responsible AI-driven language model enables human-like text generation, summarization, and more. Learn how to use it for your next project! 💡 #Phi3 #LanguageModel #AI #NLP"
 ```
 
 ## Observability

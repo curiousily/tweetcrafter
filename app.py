@@ -18,12 +18,10 @@ from tweetcrafter.tasks import (
 
 load_dotenv()
 
-llm = create_model(Config.MODEL)
-
-
 Config.Path.AGENT_LOGS_DIR.mkdir(exist_ok=True, parents=True)
 Config.Path.OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
 
+llm = create_model(Config.MODEL)
 
 scraper = scraper_agent(llm)
 researcher = researcher_agent(llm)
