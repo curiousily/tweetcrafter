@@ -19,6 +19,12 @@ cd tweetcrafter
 poetry install
 ```
 
+Install iPython kernel:
+
+```sh
+poetry run python -m ipykernel install --user --name tweetcrafter --display-name "Python (tweetcrafter)"
+```
+
 ## Add API keys
 
 Create a `.env` file in the root of the project and add your Groq and/or OpenAI API keys:
@@ -93,3 +99,5 @@ Version 3:
 ## Observability
 
 _TweetCrafter_ stores logs of prompts and individual agent logs in the `logs` directory.
+
+Have a look at the `notebooks/explore-logs.ipynb` notebook to explore the logs.
