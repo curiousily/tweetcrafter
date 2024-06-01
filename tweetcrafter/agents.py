@@ -73,8 +73,9 @@ def editor_agent(llm) -> Agent:
         role="Senior Tweet Editor",
         goal=dedent("""
                 Write 3 different versions of the tweet based on the the original research report.
+                Keep the format and style of the original tweet.
                 Create a single text that contains all variants (original and different versions) of the tweet.
-                Use the `save_tool` and use the `text` parameter to save the text.
+                Use the `save_tweet` and use the `text` parameter to save the text.
             """),
         backstory=dedent("""
             You have experience with social media and understand the importance of engaging content.

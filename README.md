@@ -71,10 +71,10 @@ poetry run python app.py
 
 ```py
 {
-  'total_tokens': 14322,
-  'prompt_tokens': 11767,
-  'completion_tokens': 2555,
-  'successful_requests': 10
+   "total_tokens":12334,
+   "prompt_tokens":10260,
+   "completion_tokens":2074,
+   "successful_requests":8
 }
 ```
 
@@ -84,16 +84,36 @@ The tweets I got from the crew (saved to `output/tweet.md`):
 
 ```md
 Original Tweet:
-"Meet Phi-3, the cutting-edge language model! 🤖💻 With its conversational format, Phi-3 enables human-like text generation, summarization, and more. Scalable, open-source, and responsible AI-driven. 🚀💡 #Phi3 #LanguageModel #AI #NLP"
+"Meet Phi-3, the cutting-edge AI model revolutionizing NLP! 🚀💻
+• Processes human language efficiently and accurately
+• Ideal for NLP, text gen, conversational AI, sentiment analysis, and language translation
+• Transparent, accountable, and fair decision-making
+• Trained on diverse datasets and compatible with TensorFlow and PyTorch
+#Phi3 #AI #NLP #LanguageModel #ResponsibleAI
 
 Version 1:
-"Unlock the power of Phi-3! 🚀💻 This cutting-edge language model enables human-like text generation, summarization, and more. Learn how to integrate it into your applications today! 💡 #Phi3 #LanguageModel #AI #NLP"
+"Unlock the power of Phi-3, the AI model that's changing the NLP game! 🚀💻
+• Efficient and accurate language processing
+• Perfect for text gen, conversational AI, sentiment analysis, and language translation
+• Transparency, accountability, and fairness in decision-making
+• Compatible with TensorFlow and PyTorch
+#Phi3 #AI #NLP #LanguageModel #ResponsibleAI
 
 Version 2:
-"Take your applications to the next level with Phi-3! 🚀💻 This scalable, open-source language model enables conversational AI, text generation, and more. Get started with our sample inference code! 💡 #Phi3 #LanguageModel #AI #NLP"
+"Take your NLP projects to the next level with Phi-3! 🚀💻
+• Fast and accurate language processing
+• Ideal for conversational AI, sentiment analysis, and language translation
+• Built with transparency, accountability, and fairness in mind
+• Compatible with TensorFlow and PyTorch
+#Phi3 #AI #NLP #LanguageModel #ResponsibleAI
 
 Version 3:
-"Discover the possibilities of Phi-3! 🤖💻 This responsible AI-driven language model enables human-like text generation, summarization, and more. Learn how to use it for your next project! 💡 #Phi3 #LanguageModel #AI #NLP"
+"Discover the future of NLP with Phi-3! 🚀💻
+• Efficient language processing for text gen, conversational AI, and more
+• Transparent, accountable, and fair decision-making
+• Trained on diverse datasets and compatible with TensorFlow and PyTorch
+• Revolutionize your NLP projects with Phi-3
+#Phi3 #AI #NLP #LanguageModel #ResponsibleAI
 ```
 
 ## Observability

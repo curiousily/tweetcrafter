@@ -40,10 +40,8 @@ def write_tweet_task(agent: Agent, context: List[Task] = []) -> Task:
 def edit_task(agent: Agent, context: List[Task] = []) -> Task:
     return Task(
         description=dedent("""
-            Write 3 different versions of the tweet based on the the original research report.
-            Base the different versions on the feedback:
-            {suggestion}
-            Save the original tweet and 3 versions of the tweet.
+            Create 3 different versions of the tweet based on your critique, the original research report,
+            and the suggestion {suggestion}. Save the original tweet and 3 versions of the tweet.
         """),
         expected_output="Saved original tweet and 3 versions of the tweet into a text file.",
         agent=agent,

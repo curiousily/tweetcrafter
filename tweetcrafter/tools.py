@@ -4,7 +4,7 @@ from tweetcrafter.config import Config
 
 
 @tool("save_tweet")
-def save_tweet(text):
+def save_tweet(text: str):
     """Save a tweet text to a markdown file."""
     file_path = Config.Path.OUTPUT_DIR / "tweet.md"
     with file_path.open("w") as file:
